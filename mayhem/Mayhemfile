@@ -1,0 +1,9 @@
+project: parsimonious
+target: fuzz-rule
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_rule.py
+    libfuzzer: true
+    timeout: 12
